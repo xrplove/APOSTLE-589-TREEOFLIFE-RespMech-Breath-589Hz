@@ -315,7 +315,7 @@ jobs:
         # so it tests a different twine than the one that actually decides. v1.14.2 pins
         # twine==7.0.0 / packaging==26.2, verified against this project's own 2.4.0 wheel and
         # sdist in a venv built to those exact versions — both PASSED.
-        uses: pypa/gh-action-pypi-publish@v1.14.2
+        uses: pypa/gh-action-pypi-publish@v1.14.3
         with:
           # PEP 740 attestations (the action's default) name the run's own commit as the
           # source. On a tag push that is the tag's commit; on a manual publish of a tag it is
@@ -352,7 +352,7 @@ jobs:
         # so it tests a different twine than the one that actually decides. v1.14.2 pins
         # twine==7.0.0 / packaging==26.2, verified against this project's own 2.4.0 wheel and
         # sdist in a venv built to those exact versions — both PASSED.
-        uses: pypa/gh-action-pypi-publish@v1.14.2
+        uses: pypa/gh-action-pypi-publish@v1.14.3
         with:
           repository-url: https://test.pypi.org/legacy/
           skip-existing: true
